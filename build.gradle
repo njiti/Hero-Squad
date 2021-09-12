@@ -1,22 +1,20 @@
-plugins {
-    id 'java'
-    id 'application'
-}
+apply plugin: 'java'
+apply plugin: 'application'
 
-
-group 'org.example'
-version '1.0-SNAPSHOT'
-
-mainClassName = 'App'
+archivesBaseName = "hero-squad"
+version = '1.0'
+mainClassName = "App"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation group: 'junit', name: 'junit', version: '4.12'
-    implementation "com.sparkjava:spark-core:2.9.3"
-    implementation "com.sparkjava:spark-template-handlebars:2.7.1"
-    implementation 'org.slf4j:slf4j-simple:1.7.32'
-
+    implementation group: 'com.sparkjava', name: 'spark-core', version: '2.3'
+    testImplementation group: 'junit', name: 'junit', version: '4.+'
+    implementation group: 'org.apache.velocity', name: 'velocity', version: '1.7'
 }
+
+applicationName = "hero-squad"
+mainClassName = 'App'
+task stage(dependsOn: ['clean', 'installDist'])
