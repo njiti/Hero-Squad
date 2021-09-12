@@ -1,0 +1,31 @@
+<h1>All Squads</h1>
+#if($squads)
+<ol>
+  #foreach ($squad in $squads)
+    <!-- Card -->
+    <div class="card">
+
+      <!-- Card image -->
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+
+      <!-- Card content -->
+      <div class="card-body">
+
+        <!-- Title -->
+        <h4 class="card-title"><a>$squad.getName()</a></h4>
+        <!-- Text -->
+        <p class="card-text">Squad Cause:$squad.getCause()</p>
+        <p class="card-text">Squad Maximum:$squad.getMax()</p>
+        <!-- Button -->
+        <a href="/squads/$squad.getId()" class="btn btn-cyan">View Heroes</a>
+
+      </div>
+
+    </div>
+
+  #end
+</ol>
+#else
+ <h3> Please add a new squad!</h3>
+ #end
+<a href="/squads/new"><button class="btn btn-cyan">Add a new Squad</button></a>

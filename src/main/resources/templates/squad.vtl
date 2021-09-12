@@ -1,0 +1,27 @@
+<h1>$squad.getName() heroes:</h1>
+
+<table class="table table-striped">
+ <thead class="thead-dark">
+   <tr>
+       <th scope="col">Name</th>
+       <th scope="col">Age</th>
+       <th scope="col">Power</th>
+       <th scope="col">Weakness</th>
+   </tr>
+ </thead>
+  #foreach($hero in $squad.getHeroes())
+
+   <tbody>
+   <tr>
+       <td>$hero.getName()</td>
+       <td>$hero.getAge()</td>
+       <td>$hero.getPower()</td>
+       <td>$hero.getWeakness()</td>
+     </tr>
+   </tbody>
+ #end
+ </table>
+<div class = "space"></div>
+
+<a href="/squads/$squad.getId()/heroes/new"><button class="btn btn-cyan">Add a New Hero</button></a>
+<a href="/squads"><button class="btn btn-cyan">All Squads</button></a>
