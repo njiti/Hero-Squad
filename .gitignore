@@ -38,4 +38,5 @@ build/
 .gradle/
 .idea/
 !gradle-wrapper.jar
-/node_moduleshero-herosquad
+/node_modules
+
