@@ -3,7 +3,7 @@ in this application a user can create both a squad and an individual hero
 
 ## description
 
-on application launch the user can add and view the created squads .
+An application launch the user can add and view the created squads .
 ## Author
 JAPHETH NYARANGA.
 
