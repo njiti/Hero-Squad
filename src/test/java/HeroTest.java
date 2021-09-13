@@ -15,7 +15,7 @@ public class HeroTest {
     @Test
     public void If_hero_instantiatesWithAge_int() {
         Hero hero = new Hero("Superman","32","all","cryptonite");
-        assertEquals("8", hero.getAge());
+        assertEquals("32", hero.getAge());
     }
     @Test
     public void If_Hero_instantiatesWithPower_String() {
