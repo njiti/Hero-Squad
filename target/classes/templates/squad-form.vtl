@@ -1,0 +1,21 @@
+<h1>Add a new squad</h1>
+
+<p>Add a squad here:</p>
+
+
+<form action="/squads" method="post">
+  <div class="form-group">
+          <label for="name"> Squad Name</label>
+          <input id="name" name="name" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="age">Maximum number of heroes</label>
+          <input id="max" name="max" type="number" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="power">Squad cause</label>
+          <input id="cause" name="cause" type="text" class="form-control">
+      </div>
+
+  <button type="submit" class="btn btn-primary btn-block">Add Squad</button>
+</form>

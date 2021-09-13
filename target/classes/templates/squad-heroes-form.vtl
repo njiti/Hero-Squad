@@ -1,0 +1,26 @@
+<h1>Heroes</h1>
+
+<p>Please Add New Hero:</p>
+
+<form action="/heroes" method="post">
+    <input id="squadId" name="squadId" type="hidden" value="$squad.getId()">
+
+    <div class="form-group">
+        <label for="name">Hero Name</label>
+        <input id="name" name="name" type="text" class="form-control" placeholder="Hero Name">
+    </div>
+    <div class="form-group">
+        <label for="age">Hero Age</label>
+        <input id="age" name="age" type="number" class="form-control" placeholder="Hero Age">
+    </div>
+    <div class="form-group">
+        <label for="power">Hero Strength</label>
+        <input id="power" name="power" type="text" class="form-control" placeholder="Hero Strength">
+    </div>
+    <div class="form-group">
+        <label for="weakness">Hero Weakness</label>
+        <input id="weakness" name="weakness" type="text" class="form-control" placeholder="Hero Weakness">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block">Add New Hero</button>
+</form>
