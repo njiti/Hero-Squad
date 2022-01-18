@@ -1,11 +1,15 @@
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+const wrapper = document.querySelector('.wrapper'),
+form = wrapper.querySelectorAll('.form'),
+submitInput = form[0].querySelector('input[type="submit"]');
 
-signUpButton.addEventListener('click', () =>
-container.classList.add('right-panel-active')
-);
+function getDataForm(e){
+    e.preventDefault();
 
-signInButton.addEventListener('click', () =>
-container.classList.remove('right-panel-active')
-);
+    var formData = new FormData(form[0]);
+    alert(formData.get('nameField') + '-' + formData.get('emailField') +
+    '-' + formData.get('passwordField'));
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+    submitInput.addEventListener('click', getDataForm, false);
+}, false);
