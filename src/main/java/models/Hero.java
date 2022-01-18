@@ -1,6 +1,8 @@
+package models;
+
 import java.util.ArrayList;
 
-class Hero {
+public class Hero {
 
     private String name;
     private int age;
