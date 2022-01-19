@@ -2,7 +2,7 @@ package models;
 
 import java.util.ArrayList;
 
-public class Hero {
+class Hero {
 
     private String name;
     private int age;
